@@ -59,11 +59,17 @@ h1,h2 { text-align:center; margin:0; }
 
 <script>
 const sentences = [
-  "Tést ùn",       // French
-  "Tést deux",      // Spanish
-  "Tést trois",          // German
-  "Tést quâtrè",                 // English
-    "Javascript Game"
+"Mein Vater heißt Peter.",
+"Meine Mutter arbeitet im Krankenhaus.",
+"Mein Bruder spielt Fußball.",
+"Meine Schwester geht zur Schule.",
+"Mein Stiefvater ist sehr nett.",
+"Meine Stiefmutter kocht gut.",
+"Meine Stiefschwester ist älter als ich.",
+"Mein Stiefbruder mag Computerspiele.",
+"Meine Großeltern wohnen in Berlin.",
+"Ich bin Einzelkind."
+
 ];
 
 let currentSentence="", hidden=[], currentPlayer=1, wheelValue=0, scores={1:0,2:0}, spinning=false, canSpin=true;
@@ -149,7 +155,7 @@ function updateHiddenDisplay() {
 }
 
 function createLetterButtons(){
-  const allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZàâäéèêôöù";
+  const allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZäöüß";
   lettersDiv.innerHTML="";
   for(let l of allLetters){
     const btn=document.createElement("button");
@@ -261,3 +267,4 @@ document.addEventListener("keydown", e => {
 </script>
 </body>
 </html>
+
