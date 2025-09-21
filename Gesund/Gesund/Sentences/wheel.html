@@ -59,11 +59,17 @@ h1,h2 { text-align:center; margin:0; }
 
 <script>
 const sentences = [
-  "Tést ùn",       // French
-  "Tést deux",      // Spanish
-  "Tést trois",          // German
-  "Tést quâtrè",                 // English
-    "Javascript Game"
+"Ich esse selten ein Butterbrot.",
+"Sie trinkt nie einen Orangensaft.",
+"Ich esse oft ein Butterbrot.",
+"Sie isst oft Chips.",
+"Ich trinke eine Cola dreimal pro Woche.",
+"Er isst selten ein Stück Kuchen.",
+"Er isst oft ein Stück Kuchen.",
+"Ich esse selten eine Orange.",
+"Sie isst selten eine Banane.",
+"Sie isst nie Bonbons."
+
 ];
 
 let currentSentence="", hidden=[], currentPlayer=1, wheelValue=0, scores={1:0,2:0}, spinning=false, canSpin=true;
@@ -261,4 +267,5 @@ document.addEventListener("keydown", e => {
 </script>
 </body>
 </html>
+
 
