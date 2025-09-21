@@ -59,11 +59,17 @@ h1,h2 { text-align:center; margin:0; }
 
 <script>
 const sentences = [
-  "Tést ùn",       // French
-  "Tést deux",      // Spanish
-  "Tést trois",          // German
-  "Tést quâtrè",                 // English
-    "Javascript Game"
+"Heute ist Montag, der erste Januar.",
+"Morgen ist Dienstag, der zweite Februar.",
+"Übermorgen ist Mittwoch, der dritte März.",
+"Am sechsten Juni beginnt der Sommer.",
+"Der siebte Juli ist ein Samstag.",
+"Der dreizehnte Januar ist ein Freitag.",
+"Der siebzehnte Mai ist ein Mittwoch.",
+"Am achtzehnten Juni gehen wir ins Schwimmbad.",
+"Der neunzehnte Juli ist ein Donnerstag.",
+"Am zweiten September beginnt die Schule."
+
 ];
 
 let currentSentence="", hidden=[], currentPlayer=1, wheelValue=0, scores={1:0,2:0}, spinning=false, canSpin=true;
@@ -261,3 +267,4 @@ document.addEventListener("keydown", e => {
 </script>
 </body>
 </html>
+
