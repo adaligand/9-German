@@ -59,11 +59,17 @@ h1,h2 { text-align:center; margin:0; }
 
 <script>
 const sentences = [
-  "Tést ùn",       // French
-  "Tést deux",      // Spanish
-  "Tést trois",          // German
-  "Tést quâtrè",                 // English
-    "Javascript Game"
+"In meiner Stadt gibt es einen Strand.",
+"In meiner Stadt gibt es keinen Marktplatz.",
+"In meiner Stadt gibt es eine Bank.",
+"Es gibt keine Schulen.",
+"Es gibt keine Bibliotheken.",
+"Es gibt keine Apotheken.",
+"Es gibt ein Museum.",
+"Es gibt ein Schwimmbad.",
+"Es gibt kein Kino.",
+"Es gibt einen Bahnhof."
+
 ];
 
 let currentSentence="", hidden=[], currentPlayer=1, wheelValue=0, scores={1:0,2:0}, spinning=false, canSpin=true;
@@ -261,4 +267,5 @@ document.addEventListener("keydown", e => {
 </script>
 </body>
 </html>
+
 
