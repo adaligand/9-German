@@ -59,11 +59,17 @@ h1,h2 { text-align:center; margin:0; }
 
 <script>
 const sentences = [
-  "Tést ùn",       // French
-  "Tést deux",      // Spanish
-  "Tést trois",          // German
-  "Tést quâtrè",                 // English
-    "Javascript Game"
+"Ich habe blaue Augen.",
+"Er hat grüne Augen.",
+"Sie hat lange, blonde Haare.",
+"Ich habe kurze, braune Haare.",
+"Er hat schwarze Haare.",
+"Ich bin klein und schlank.",
+"Sie ist groß und jung.",
+"Er ist alt und gutaussehend.",
+"Ich habe glatte Haare.",
+"Er ist muskulös."
+
 ];
 
 let currentSentence="", hidden=[], currentPlayer=1, wheelValue=0, scores={1:0,2:0}, spinning=false, canSpin=true;
@@ -149,7 +155,7 @@ function updateHiddenDisplay() {
 }
 
 function createLetterButtons(){
-  const allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZàâäéèêôöù";
+  const allLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZäöüß";
   lettersDiv.innerHTML="";
   for(let l of allLetters){
     const btn=document.createElement("button");
@@ -261,3 +267,4 @@ document.addEventListener("keydown", e => {
 </script>
 </body>
 </html>
+
